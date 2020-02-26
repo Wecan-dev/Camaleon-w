@@ -1,33 +1,42 @@
 @font-face {
-    font-family: 'Futura';
-    src: url('../font/Futura-CondensedLight.otf') format('otf'),
-        url('../font/Futura-CondensedLight.otf') format('otf');
-    font-weight: normal;
+    font-family: 'Futura LtCn BT';
+    src: url('../font/FuturaBT-LightCondensed.woff2') format('woff2'),
+        url('../font/FuturaBT-LightCondensed.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-  font-family: "Futura";
-  src: url("../font/Futura.ttc");
-  /* IE9*/
-  src: url("../fonts/228984258eaa17737d6d3fdcc03f6f1f.eot?#iefix") format("embedded-opentype"),
-  /* IE6-IE8 */
-  url("../fonts/228984258eaa17737d6d3fdcc03f6f1f.woff2") format("woff2"),
-  /* chrome、firefox */
-  url("../fonts/228984258eaa17737d6d3fdcc03f6f1f.woff") format("woff"),
-  /* chrome、firefox */
-  url("../fonts/228984258eaa17737d6d3fdcc03f6f1f.ttf") format("truetype"),
-  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("../fonts/228984258eaa17737d6d3fdcc03f6f1f.svg#Futura") format("svg");
-  /* iOS 4.1- */
+    font-family: 'Futura BdCn BT';
+    src: url('../font/FuturaBT-BoldCondensed.woff2') format('woff2'),
+        url('../font/FuturaBT-BoldCondensed.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Futura MdCn BT';
+    src: url('../font/FuturaBT-MediumCondensed.woff2') format('woff2'),
+        url('../font/FuturaBT-MediumCondensed.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../font/Futura-CondensedLight.woff2') format('woff2'),
+        url('../font/Futura-CondensedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
 
 
 body{
 	width: 100%;
 	height: 100vh;
     overflow: hidden;
-    font-family: 'Futura'
+    font-family: 'Futura' !important ;
 
 }
 .navbar{
@@ -38,6 +47,7 @@ body{
 .nav-item{
 	margin-right: 20px;
 	z-index: 999;
+    font-size: 1.2rem;
 }
 
 .nav-link{
@@ -54,14 +64,14 @@ body{
 
 .slick-dots {
     position: absolute;
-    bottom: 149px;
+    bottom: 125px;
     display: block;
     width: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
     text-align: center;
-    right: 335px;
+    right: 280px;
 }
 
 .slick-dots li button:before{
@@ -123,15 +133,18 @@ body{
 }
 
 .title-general h2{
-	font-size: 5rem;
-	font-weight: bold;;
+	font-size: 7rem;
+	font-weight: bold;
+    letter-spacing: 6px;
 }
 
 .subtitle-general{
 	width: 80%;
 	margin: 0 auto;
-	color: #50410d;
+	color: #343a40;
     font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
 }
 
 .banner-content--center{
@@ -144,6 +157,7 @@ body{
     border-radius: 15px;
     padding: 3px 8px;
     color: white;
+    font-size: 1.2rem;
 }
 
 .btn-outline:hover{
@@ -184,13 +198,13 @@ body{
 }
 
 .agencia-title .title-general h2{
-    font-size: 3.5rem;
+    font-size: 5rem;
+    letter-spacing: 3px;
 }
 
 .agencia-title .subtitle-general{
     margin-left: 0;
     color: #fff;
-    font-size: 20px;
     width: 85%;
     margin: 0 auto;
 }
@@ -210,14 +224,14 @@ body{
 }
 .subcontent-title h3{
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 3rem;
 }
 .subcontent-text{
     padding: 7px;
 }
 
 .subcontent-text p{
-    font-size: 15px;
+    font-size: 1.1rem;
 }
 
 .logo-header{
@@ -247,7 +261,7 @@ body{
     background-size: cover; 
 }
 .servicio-title .subtitle-general p{
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .subcontent-iconos{
@@ -260,7 +274,7 @@ body{
 
 .icono-servicio p{
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: #afacac;
     font-weight: bold;
 }
@@ -325,11 +339,11 @@ a.icono-servicio{
 
 .servicio-web .title-general h2, .servicio-landing .title-general h2, .servicio-commerce .title-general h2{
     color: #0b3346;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .servicio-web .subtitle-servicio, .servicio-landing .subtitle-general, .servicio-commerce .subtitle-general {
-    font-size: 17px;
+    font-size: 1.2rem;
     font-weight: normal;
 }
 
@@ -340,7 +354,7 @@ a.icono-servicio{
 
 .servicios-redirec a, .servicios-redirec span{
     color: #0b3346;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -387,7 +401,7 @@ a.icono-servicio{
 
 .servicio-publi-face .title-general h2, .servicio-publi-like .title-general h2, .servicio-publi-google .title-general h2,
 .servicio-redes-admin .title-general h2, .servicio-redes-creat .title-general h2{
-    font-size: 3rem;
+    font-size: 4rem;
     color: #000;
 }
 
@@ -395,7 +409,7 @@ a.icono-servicio{
 .servicio-publi-face .subtitle-general, .servicio-publi-like .subtitle-general, .servicio-publi-google .subtitle-general,
 .servicio-redes-admin .subtitle-general, .servicio-redes-creat .subtitle-general{
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .content-phone-video{
@@ -459,7 +473,7 @@ a.icono-servicio{
 }
 
 .title-especiales h3{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 
@@ -467,6 +481,7 @@ a.icono-servicio{
     width: 65%;
     color: #fff;
     z-index: 1;
+    font-size: 1.2rem;
 }
 
 .programatic{
@@ -579,7 +594,7 @@ a.icono-servicio{
 .redirect-especiales ul.nav-tabs .nav-link{
     color: #0b3346;
     padding: 0 5px;
-    font-size: 16px;
+    font-size: 1.5rem;
 }
 
 .tab-especiales{
@@ -657,7 +672,8 @@ a.icono-servicio{
 }
 
 .title-contacto.title-general h2{
-    font-size: 3.5rem
+    font-size: 5rem;
+    letter-spacing: 6px;
 }
 
 .iconos-contacto{
@@ -734,4 +750,9 @@ input, textarea{
     padding: 6px 50px;
     color: #fff;
     margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.btn-form:hover{
+    opacity: .85;
 }
