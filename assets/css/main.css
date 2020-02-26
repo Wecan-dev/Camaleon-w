@@ -45,7 +45,7 @@ body{
 }
 
 .nav-link:hover{
-	color: #795f05;
+	color: #343a40;
 }
 
 .slider-banner_item {
@@ -124,8 +124,7 @@ body{
 
 .title-general h2{
 	font-size: 5rem;
-	font-weight: bold;
-    font-family: 'Viga' ;
+	font-weight: bold;;
 }
 
 .subtitle-general{
@@ -149,7 +148,17 @@ body{
 
 .btn-outline:hover{
 	background: #fff;
-	color: #ffc500;
+	color: #343a40;
+}
+
+.btn-outline.btn-bg{
+    background: #fff;
+    color: #343a40;
+}
+
+.btn-outline.btn-bg:hover{
+    background: transparent;
+    color: #fff;
 }
 
 .pieza-banner img{
@@ -176,7 +185,6 @@ body{
 
 .agencia-title .title-general h2{
     font-size: 3.5rem;
-    font-family: 'Viga';
 }
 
 .agencia-title .subtitle-general{
@@ -202,7 +210,6 @@ body{
 }
 .subcontent-title h3{
     font-weight: bold;
-    font-family: 'Viga';
     font-size: 2.3rem;
 }
 .subcontent-text{
@@ -639,7 +646,7 @@ a.icono-servicio{
     width: 100%;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
 }
 
 .content-ubicacion{
@@ -653,7 +660,78 @@ a.icono-servicio{
     font-size: 3.5rem
 }
 
-.title-contacto a{
+.iconos-contacto{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff; 
+}
+
+.iconos-contacto img{
+    width: 60px;
+}
+
+.iconos-contacto:hover{
+    text-decoration: none;
+    color: #06212d;
+}
+
+.iconos-contacto p{
+    text-align: center; 
+}
+
+.content-formulario{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.degradado-form{
+    background: linear-gradient(90deg, rgba(197,6,128,0.9780287114845938) 37%, rgba(102,45,145,1) 100%);
+    width: 80%;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.formulario{
+    padding: 20px;
+    background: white;
+    width: 100%;
+    border-radius: 15px; 
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input, textarea{
+    width: 100%;
+    border: 1px solid gray;
+    margin: 8px 0;
+    border-radius: 5px;
+    padding: 5px 3px;
+    outline: none;
+}
+
+.content-formulario input:nth-child(4) {
+    width: 49%
+}
+
+.content-formulario input:nth-child(5) {
+    width: 49%
+}
+
+.btn-form{
+    background: linear-gradient(90deg, rgba(197,6,128,0.9780287114845938) 37%, rgba(102,45,145,1) 100%);
+    border: none;
+    font-weight: bold;
+    padding: 6px 50px;
+    color: #fff;
+    margin: 10px 0;
 }
