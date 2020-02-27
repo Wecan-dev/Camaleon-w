@@ -85,6 +85,7 @@ body{
     color: #ffc500;
     box-shadow: 1px 0px 14px -3px rgba(0, 0, 0, 1);
     border-radius: 50%;
+    transition: .5s;
 }
 
 .slick-dotted.slick-slider{
@@ -113,13 +114,13 @@ body{
 
 }
 
-.banner:nth-child(3){
+.banner:nth-child(2){
 	background: #c50680;
 }
-.banner:nth-child(4){
+.banner:nth-child(3){
 	background: #662d91;
 }
-.banner:nth-child(5){
+.banner:nth-child(4){
     background: #247fa9;
 }
 
@@ -755,4 +756,16 @@ input, textarea{
 
 .btn-form:hover{
     opacity: .85;
+}
+
+.slick-dots li.slick-active:nth-child(2) button:before{
+    color: #c50680;
+}
+
+.slick-dots li.slick-active:nth-child(3) button:before{
+    color: #662d91;
+}
+
+.slick-dots li.slick-active:nth-child(4) button:before{
+    color: #247fa9;
 }

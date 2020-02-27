@@ -3,7 +3,8 @@
 const slider = $(".slider-banner");
 slider
   .slick({
-    dots: true
+    dots: true,
+    infinite: false,
   });
 
 slider.on('wheel', (function(e) {
