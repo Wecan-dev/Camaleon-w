@@ -648,13 +648,19 @@ a.icono-servicio{
     align-items: center;
 }
 
+.logo-portafolio{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
 .logo-portafolio a{
     display: flex;
-    justify-content: center; 
+    width: 55%;
 }
 
 .logo-portafolio img{
-    width: 45%;
+    width: 100%;
 }
 
 .container-contacto{
@@ -781,7 +787,7 @@ input, textarea{
 .slider-portafolio{
     width: 100%;
     height: 60%;
-    padding-left: 100px;
+    padding-left: 60px;
 }
 
 .slick-dotted.slick-slider{
@@ -804,10 +810,11 @@ input, textarea{
 
 .content-card{
     position: relative;
+    outline: none;
 }
 
 .card-images{
-     width: 350px;
+     width: 340px;
 }
 .card-images img{
     width: 100%;
