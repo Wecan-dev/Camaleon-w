@@ -62,25 +62,26 @@ body{
 	height: 100vh;
 }
 
-.slick-dots {
+.slider-banner .slick-dots {
     position: absolute;
-    bottom: 125px;
-    display: block;
-    width: 100%;
+    bottom: 100px;
+    display: flex ;
+    width: 50%;
     padding: 0;
     margin: 0;
     list-style: none;
     text-align: center;
-    right: 280px;
+    justify-content: center;
+    left: 54px;
 }
 
-.slick-dots li button:before{
+.slider-banner .slick-dots li button:before{
 	font-size: 20px;
 	color: #fff;
 	opacity: 1;
 }
 
-.slick-dots li.slick-active button:before {
+.slider-banner .slick-dots li.slick-active button:before {
     opacity: .75;
     color: #ffc500;
     box-shadow: 1px 0px 14px -3px rgba(0, 0, 0, 1);
@@ -88,7 +89,7 @@ body{
     transition: .5s;
 }
 
-.slick-dotted.slick-slider{
+.slider-banner .slick-dotted.slick-slider{
     margin: 0;
 }
 
@@ -102,8 +103,8 @@ body{
 
 .containaer-banner{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	height: 100%;
+	grid-template-columns: 50% 50%;
+	height: 100vh;
 
 }
 
@@ -134,7 +135,7 @@ body{
 }
 
 .title-general h2{
-	font-size: 7rem;
+	font-size: 6rem;
 	font-weight: bold;
     letter-spacing: 6px;
 }
@@ -189,7 +190,7 @@ body{
 .agencia-title{
     text-align: left;
     background: url('../images/contactanos.png');
-    background-position: bottom ;
+    background-position: right;
     background-size: cover; 
 }
 
@@ -469,12 +470,19 @@ a.icono-servicio{
 }
 
 
-.title-especiales, .redirect-especiales{
+.title-especiales{
     z-index: 1;
+    padding-top: 150px;
+    width: 65%;
 }
 
 .title-especiales h3{
-    font-size: 3.5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.title-especiales h3 small{
     font-weight: bold;
 }
 
@@ -509,7 +517,7 @@ a.icono-servicio{
     opacity: .1;
     z-index: 2;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
 }
@@ -543,7 +551,7 @@ a.icono-servicio{
     opacity: .1;
     z-index: 2;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
 }
@@ -577,7 +585,7 @@ a.icono-servicio{
     opacity: .1;
     z-index: 2;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
 }
@@ -646,7 +654,7 @@ a.icono-servicio{
 }
 
 .logo-portafolio img{
-    width: 65%;
+    width: 45%;
 }
 
 .container-contacto{
@@ -740,7 +748,7 @@ input, textarea{
     width: 49%
 }
 
-.content-formulario input:nth-child(5) {
+.content-formulario input:nth-child(5){
     width: 49%
 }
 
@@ -768,4 +776,88 @@ input, textarea{
 
 .slick-dots li.slick-active:nth-child(4) button:before{
     color: #247fa9;
+}
+
+.slider-portafolio{
+    width: 100%;
+    height: 60%;
+    padding-left: 100px;
+}
+
+.slick-dotted.slick-slider{
+    margin: 0;
+}
+
+.slider-portafolio .slick-dots{
+    bottom: -5px;
+    left: 0;
+}
+
+.slider-portafolio .content-card:nth-child(even){
+    padding-top: 70px ;
+    display: flex;
+    flex-direction: column-reverse; 
+}
+.content-card:nth-child(even) .text-card{
+   top: -1px;
+}
+
+.content-card{
+    position: relative;
+}
+
+.card-images{
+     width: 350px;
+}
+.card-images img{
+    width: 100%;
+    height: 100%;
+}
+
+.slider-portafolio .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+    content: "";
+    width: 30px;
+    height: 4px;
+    background: black;
+    opacity: 1;
+    top: -3px;
+}
+.slider-portafolio .slick-dots li button:before {
+  
+    width: 20px;
+    height: 1px;
+    content: '';
+    background: #000;
+    opacity: 1;
+    top: -1px;
+
+}
+.slider-portafolio .slick-dots li {
+    margin: 0;
+    padding: 0; 
+}
+
+.content-card:hover .text-card{
+    opacity: 1;
+    transition: .5s;
+}
+
+.text-card{
+    position: absolute;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.text-card p{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.text-card span{
+    font-size: 1.2rem;
+    font-weight: bold;
 }
